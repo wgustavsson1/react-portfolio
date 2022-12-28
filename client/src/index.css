@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background-image: url('images/background.jpg');*/
+  background-color:black;
+}
+
+header
+{
+    padding: 0.2vh;
+    background-image: linear-gradient(to right, rgb(73, 71, 71) , rgb(255, 255, 255));
+    color:white;
+}
+
+#main-menu
+{
+  margin-left: 20vw;
+  margin-top:15vh;
+}
+#main-menu a
+{
+  text-decoration: none;
+}
+
+h1
+{
+  /*text-shadow: 5px 5px yellow; */
+  margin:0;
+  padding:0.5vh;
+  font-size:4em;
+  font-family: 'Bebas Neue', cursive;
+}
+.font-white
+{
+  color:white;
+}
+.font-green
+{
+  color:rgba(15, 204, 15, 0.76);
+}
+.swapper-title
+{
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.swapper-title:hover
+{
+  transform: translateX(2%);
+}
+

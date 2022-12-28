@@ -1,0 +1,64 @@
+h2 a
+{
+    position:fixed;
+    color:white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    right: 10vw;
+    top: 5vh;
+}
+
+form
+{
+    text-align: center;
+    margin-top:20vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+form h1
+{
+    color:rgba(15, 204, 15, 0.76);
+    margin-bottom: 5vh;
+}
+
+form input
+{
+    width: 30vw;
+    height:5vh;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: grey;
+    font-size: 2.5em;
+    padding:15px;
+    font-family: 'Bebas Neue', cursive;
+    border:none;
+    border-radius: 1em;
+}
+form label
+{
+    color:rgba(15, 204, 15, 0.76);
+    font-size:3em;
+    font-family: 'Bebas Neue', cursive;
+}
+form textarea
+{
+    text-align: center;
+    margin-bottom:1vh;
+    width: 30vw;
+    padding:15px;
+    height:10vh;
+    color:grey;
+    font-size: 1.5em;
+    border:none;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 1em;
+}
+form button
+{
+    border: none;
+    background-color: white;
+    color:rgba(15, 204, 15, 0.76);
+    font-size:2em;
+    font-family: 'Bebas Neue', cursive;
+}

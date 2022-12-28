@@ -1,0 +1,45 @@
+h2 a
+{
+    position:fixed;
+    color:white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    right: 10vw;
+    top: 5vh;
+}
+
+ul
+{
+    text-align: center;
+    color: rgba(15, 204, 15, 0.76);
+    margin-top:20vh;
+    font-family: 'Bebas Neue', cursive;
+}
+ul li
+{
+    list-style-type: none;
+    margin-bottom: 5vh;
+}
+ul li a
+{
+    text-decoration: none;
+    color: rgba(15, 204, 15, 0.76);
+}
+ul li h1
+{
+    font-size: 4em;
+    color: white;
+}
+ul li h2
+{
+    font-size: 2em;
+}
+.swapper-title
+{
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.swapper-title:hover
+{
+  transform: translateX(2%);
+}

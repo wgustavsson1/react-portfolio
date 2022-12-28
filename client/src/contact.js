@@ -1,0 +1,80 @@
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom/client';
+import './contact.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function Contact() {
+  
+    return(
+      <div>
+        <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
+      <ContactForm></ContactForm>
+      </div>
+      )
+  }
+
+  const FORM_ENDPOINT = "mailto:wilhelm.gustavsson899@gmail.com"; // TODO - fill on the later step
+
+const ContactForm = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 100);
+  };
+
+  if (submitted) {
+    return (
+      <>
+        <div className="text-2xl">Thank you!</div>
+        <div className="text-md">We'll be in touch soon.</div>
+      </>
+    );
+  }
+
+  return (
+
+    <form
+      action={FORM_ENDPOINT}
+      onSubmit={handleSubmit}
+      method="GET"
+      target="_blank" 
+    >
+      <h1>Please feel free to send me an email</h1>
+
+      <label for ="subject">Subject</label>
+      <div className="mb-3 pt-0">
+        <input
+          type="text"
+          name="subject"
+          placeholder = "Regarding.."
+          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          required
+        />
+      </div>
+      <label for ="body">Message</label>
+      <div className="mb-3 pt-0">
+        <textarea
+          name="body"
+          placeholder = "Hello!..."
+          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          required
+        />
+      </div>
+      <div className="mb-3 pt-0">
+        <button
+          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="submit"
+        >
+          Send!
+        </button>
+      </div>
+    </form>
+  );
+};
+
+
+  export default Contact

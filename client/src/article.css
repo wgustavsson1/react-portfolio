@@ -1,0 +1,23 @@
+
+#name a
+{
+    color: white;
+}
+article
+{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: white;
+    margin-top:10vh;
+}
+article h1
+{
+    font-size: 15em;
+}
+article p
+{
+    font-family: 'Courier New', Courier, monospace;
+    color:grey;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}

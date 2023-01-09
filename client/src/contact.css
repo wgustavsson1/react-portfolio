@@ -62,3 +62,12 @@ form button
     font-size:2em;
     font-family: 'Bebas Neue', cursive;
 }
+.swapper-title
+{
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.swapper-title:hover
+{
+  transform: translateX(2%);
+}

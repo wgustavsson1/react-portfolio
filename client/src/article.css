@@ -21,3 +21,12 @@ article p
     margin-left: 20vw;
     margin-right: 20vw;
 }
+.swapper-title
+{
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.swapper-title:hover
+{
+  transform: translateX(2%);
+}

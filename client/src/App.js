@@ -6,6 +6,7 @@ import Work from './work'
 import Home from './index'
 import Liftly from './liftly'
 import TDDD23 from './TDDD23'
+import TQPR10 from './TQPR10'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Route path = "/work" element = {<Work/>} > </Route>
       <Route path = "/liftly" element = {<Liftly/>} > </Route>
       <Route path = "/tddd23" element = {<TDDD23/>} > </Route>
+      <Route path = "/tqpr10" element = {<TQPR10/>}></Route>
     </Routes>
     </Router>
   )

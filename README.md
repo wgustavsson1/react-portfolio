@@ -4,3 +4,4 @@
 # (server) npm run dev
 # (client) npm start
 # Host at netlify https://app.netlify.com/sites/lambent-nougat-e7835a/overview sign in using github page url: https://lambent-nougat-e7835a.netlify.app
+# If you add a new route make sure to add it to /routes/redirects as well for it to work in Netlify

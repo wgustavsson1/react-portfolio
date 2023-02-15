@@ -1,4 +1,38 @@
-body {
+@media (max-width:600px) {
+    #main-menu
+    {
+      font-size: 1.5em;
+    }
+    body
+    {
+      font-size:0.8em;
+    }
+}
+@media (min-width: 601px) and (max-width: 1500px)
+ {
+    #main-menu
+    {
+      font-size: 2em;
+    }
+    body
+    {
+      font-size:1em;
+    }
+}
+@media (min-width: 1500px)
+{
+    #main-menu
+    {
+      font-size:2.5em;
+    }
+    body
+    {
+      font-size:1.5em;
+    }
+}
+
+body
+ {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,7 +62,6 @@ h1
   /*text-shadow: 5px 5px yellow; */
   margin:0;
   padding:0.5vh;
-  font-size:4em;
   font-family: 'Bebas Neue', cursive;
 }
 .font-white

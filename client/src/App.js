@@ -7,6 +7,8 @@ import Home from './index'
 import Liftly from './liftly'
 import TDDD23 from './TDDD23'
 import TQPR10 from './TQPR10'
+import dynamic_webbapps from './dynamic_webbapps'
+import Dynamic_webbapps from './dynamic_webbapps'
 
 
 function App() {
@@ -44,10 +46,10 @@ function App() {
       <Route path = "/liftly" element = {<Liftly/>} > </Route>
       <Route path = "/tddd23" element = {<TDDD23/>} > </Route>
       <Route path = "/tqpr10" element = {<TQPR10/>}></Route>
+      <Route path = "/dynamic_webbapps" element = {<Dynamic_webbapps/>}></Route>
     </Routes>
     </Router>
   )
-
 
   // SEE: https://www.youtube.com/watch?v=EmUa_tcSM-k
 }

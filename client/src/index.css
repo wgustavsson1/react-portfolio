@@ -1,7 +1,15 @@
 @media (max-width:600px) {
-    #main-menu
+    .main-menu
     {
       font-size: 1.5em;
+    }
+    #main-menu-desktop
+    {
+      display:none;
+    }
+    #main-menu-mobile
+    {
+      display:block;
     }
     body
     {
@@ -10,9 +18,17 @@
 }
 @media (min-width: 601px) and (max-width: 1500px)
  {
-    #main-menu
+    .main-menu
     {
       font-size: 2em;
+    }
+    #main-menu-desktop
+    {
+      display:none;
+    }
+    #main-menu-mobile
+    {
+      display:block;
     }
     body
     {
@@ -21,9 +37,17 @@
 }
 @media (min-width: 1500px)
 {
-    #main-menu
+    .main-menu
     {
       font-size:2.5em;
+    }
+    #main-menu-desktop
+    {
+      display:block;
+    }
+    #main-menu-mobile
+    {
+      display:none;
     }
     body
     {
@@ -47,12 +71,12 @@ header
     color:white;
 }
 
-#main-menu
+.main-menu
 {
   margin-left: 20vw;
   margin-top:15vh;
 }
-#main-menu a
+.main-menu a
 {
   text-decoration: none;
 }

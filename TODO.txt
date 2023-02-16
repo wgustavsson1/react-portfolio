@@ -1,4 +1,3 @@
-Kolla så domänen wilhelmgustavsson.se funkar
 Fixa så att menyn funkar på mobil (byt inte text)
 Lägg till artiklar
 Skapa blogg

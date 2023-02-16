@@ -43,13 +43,58 @@ class SwapperTitle extends React.Component
     }
 }
 
+class SwapperTitleMobile extends React.Component
+{
+    constructor(params)
+    {
+        console.log(params)
+        super(params)
+        this.params = params
+        this.state = {selected:false}
+    }
+
+
+    handleClick = (e) => 
+    {
+        
+        //If already selected then make redirect
+        if(this.state.selected)
+        {
+            window.location.href =  this.params.url;
+            console.log("URL: " + this.params.url)
+        }
+        //Toggle state
+        this.setState({selected:!this.state.selected})
+        //Wait 2000 milliseconds and then return back state
+        let i = setInterval(()=>{
+            this.setState({selected:!this.state.selected})
+            clearInterval(i);
+        },2000);
+    }
+
+    render()
+    {
+        console.log(this.params)
+        return <h1 onClick={this.handleClick}>{this.state.selected?this.params.text_selected: this.params.text_normal}</h1>
+    }
+
+}
+
 function MainMenu()
 {
+    //Return two menues (one for desktop and one for mobile)
     return(
-        <div id='main-menu'>
+        <div>
+        <div id='main-menu-desktop' class='main-menu'>
         <a href = "/"><div className='swapper-title font-white'><SwapperTitle text_selected="Home" text_normal = "Hello."/></div></a>
         <a href = "/Work"><div className='swapper-title font-green'><SwapperTitle text_selected="Work" text_normal = "I am"/></div></a>
         <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Contact" text_normal = "Wilhelm Gustavsson"/></div></a>
+        </div>
+        <div id='main-menu-mobile' class='main-menu'>
+        <div className='font-white'><SwapperTitleMobile text_selected="Home" text_normal = "Hello." url="/"/></div>
+        <div className='font-green'><SwapperTitleMobile  text_selected="Work" text_normal = "I am" url="/Work" /></div>
+        <div className='font-green'><SwapperTitleMobile text_selected="Contact" text_normal = "Wilhelm Gustavsson" url="/Contact"/></div>
+        </div>
         </div>
     )
 }

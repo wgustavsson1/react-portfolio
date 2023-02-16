@@ -1,1 +1,5 @@
-Lägg till alla hemsidor jag har på Netlify.com som projekt i pórtfoliot
+Kolla så domänen wilhelmgustavsson.se funkar
+Fixa så att menyn funkar på mobil (byt inte text)
+Lägg till artiklar
+Skapa blogg
+Lägg till alla hemsidor jag har på Netlify.com som projekt i portfoliot

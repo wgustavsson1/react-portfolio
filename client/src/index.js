@@ -80,18 +80,19 @@ class SwapperTitleMobile extends React.Component
 
 }
 
+
 function MainMenu()
 {
     //Return two menues (one for desktop and one for mobile)
     return(
         <div>
         <div id='main-menu-desktop' class='main-menu'>
-        <a href = "/"><div className='swapper-title font-white'><SwapperTitle text_selected="Home" text_normal = "Hello."/></div></a>
+        <a href = "/Blog"><div className='swapper-title font-white'><SwapperTitle text_selected="Blog" text_normal = "Hello."/></div></a>
         <a href = "/Work"><div className='swapper-title font-green'><SwapperTitle text_selected="Work" text_normal = "I am"/></div></a>
         <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Contact" text_normal = "Wilhelm Gustavsson"/></div></a>
         </div>
         <div id='main-menu-mobile' class='main-menu'>
-        <div className='font-white'><SwapperTitleMobile text_selected="Home" text_normal = "Hello." url="/"/></div>
+        <div className='font-white'><SwapperTitleMobile text_selected="Blog" text_normal = "Hello." url="/Blog"/></div>
         <div className='font-green'><SwapperTitleMobile  text_selected="Work" text_normal = "I am" url="/Work" /></div>
         <div className='font-green'><SwapperTitleMobile text_selected="Contact" text_normal = "Wilhelm Gustavsson" url="/Contact"/></div>
         </div>

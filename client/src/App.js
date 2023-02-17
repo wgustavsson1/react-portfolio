@@ -1,6 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Blog from './blog'
 import Contact from './contact'
 import Work from './work'
 import Home from './index'
@@ -41,6 +42,7 @@ function App() {
   <Router>
     <Routes>
       <Route path = "/" element = {<Home/>} > </Route>
+      <Route path = "/Blog" element = {<Blog/>}></Route>
       <Route path = "/contact" element = {<Contact/>} > </Route>
       <Route path = "/work" element = {<Work/>} > </Route>
       <Route path = "/liftly" element = {<Liftly/>} > </Route>

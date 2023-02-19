@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Prism  from "prismjs";
 import HTMLReactParser from 'html-react-parser'
-import ReactHtmlParser from "react-html-parser";
 const loadLanguages = require('prismjs/components/');
 
 

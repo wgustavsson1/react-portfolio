@@ -4,6 +4,7 @@ import './blog.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Prism  from "prismjs";
+import HTMLReactParser from 'html-react-parser'
 import ReactHtmlParser from "react-html-parser";
 const loadLanguages = require('prismjs/components/');
 
@@ -24,7 +25,7 @@ console.log(html)
     return (
     <div>
         <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
-        <div class="code">{ ReactHtmlParser (html) }</div>
+        <div class="code">{HTMLReactParser (html) }</div>
     </div>
     )
 }

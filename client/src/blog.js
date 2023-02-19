@@ -15,7 +15,7 @@ function Blog()
 //loadLanguages(['haml']);
 
 // The code snippet you want to highlight, as a string
-const code = "function hello_world(){console.log('hello world!'); hello_world!";
+const code = "function hello_world(){console.log('hello world!'); hello_world!\n";
 
 // Returns a highlighted HTML string
 const html = Prism.highlight(code, Prism.languages.javascript, 'js');

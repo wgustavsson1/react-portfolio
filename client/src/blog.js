@@ -9,9 +9,36 @@ const loadLanguages = require('prismjs/components/');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+class BlogPost extends React.Component
+{
+    constructor(params)
+    {
+        console.log(params)
+        super(params)
+        this.params = params
+    }
+    render()
+    {
+        var articles = []
+        this.params.blog_posts.forEach((post,index) => {
+            articles.push(
+            <article>
+                <h1>{post.title}</h1>
+                <h2>{post.author}</h2>
+                <h3>{post.date}</h3>
+                <span>{HTMLReactParser(post.content)}</span>
+            </article>
+            )
+        });
+        return articles
+    }
+}
+
+
 function Blog()
 {
-    parse_blog_posts();
+    var blog_posts = parse_blog_posts();
+    console.log(blog_posts)
     //loadLanguages(['haml']);
 
     // The code snippet you want to highlight, as a string
@@ -22,10 +49,11 @@ function Blog()
     console.log(html)
 
         return (
-        <div>
+        <>
             <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
             <div class="code">{HTMLReactParser (html) }</div>
-        </div>
+            <BlogPost blog_posts = {blog_posts}></BlogPost>
+        </>
         )
 }
 
@@ -37,6 +65,7 @@ function getXMLDocument(filepath) {
 }
 function parse_blog_posts()
 {
+    var blog_posts = [];
     var image_sources = [];
     var xml = new DOMParser().parseFromString(getXMLDocument("blog_posts.xml"),"text/xml");
     var posts = xml.getElementsByTagName("post")
@@ -55,12 +84,54 @@ function parse_blog_posts()
             image_sources.push(images[i].innerHTML)
         }
         
-        console.log(title);
-        console.log(author);
-        console.log(date);
-        console.log(images);
-        console.log(image_sources);
-        console.log(content);
+        var new_post = new blog_post(title,author,date,image_sources,content)
+        blog_posts.push(new_post)
+    }
+    console.log(blog_posts)
+    return blog_posts
+}
+
+class blog_post
+{
+    constructor(title,author,date,image_sources,content)
+    {
+        this.title = title;
+        this.author = author;
+        this.date = date;
+        this.image_sources = image_sources;
+        this.content = content;
+        this.codify();
+    }
+    codify()
+    {
+        var html = HTMLReactParser(this.content);
+        console.log(html)
+        html.forEach((element,index)=>{
+            console.log(element)
+            if(element.type == 'code')
+            {
+                const code_html_string = element.props.children;
+                const codified_html_string = Prism.highlight(code_html_string, Prism.languages.javascript, 'js');
+                const pre = this.content.split("<code>")[0]
+                const post = this.content.split("</code>")[1]
+                if(pre != undefined && post != undefined)
+                {
+                    this.content = pre + codified_html_string + post
+                }
+                else if(pre!=undefined && post == undefined)
+                {
+                    this.content = pre + codified_html_string;
+                }
+                else if(pre == undefined && post != undefined)
+                {
+                    this.content = codified_html_string + post
+                }
+                else
+                {
+                    this.content = codified_html_string;
+                }
+            }
+        })
     }
 }
 

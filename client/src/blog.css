@@ -1,6 +1,15 @@
 
+code
+{
+    background-color: white;
+    margin-top:10vh;    
+}
 .code
 {
     background-color: white;
     margin-top:10vh;
+}
+article
+{
+    background-color: white;
 }

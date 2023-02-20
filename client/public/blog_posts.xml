@@ -17,6 +17,7 @@
             }
             hello_world();
             </code>
+            <p>Hej hej</p>
         </content>
     </post>
         <post>
@@ -36,6 +37,7 @@
             }
             hello_world();
             </code>
+            <p>Hej då!</p>
         </content>
     </post>
 </posts>

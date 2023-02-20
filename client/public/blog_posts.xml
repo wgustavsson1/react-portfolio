@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<posts>
+    <post>
+        <title type="text">First post</title>
+        <author type="text">Wilhelm Gustavsson</author>
+        <date type="text">2023-02-19</date>
+        <images>
+        <image type="text">https://mijablur.com/wp-content/uploads/20211222_192106_0000.jpg</image>
+        </images>
+        <content type="html">
+            <p>This is my first blog post on my blog. My name is Wilhelm Gustavsson and I´m 25 years old and a junior Fullstack Developer</p>
+            <p><bold>In the example below I will show you how to make a Hello World! script in Javascript</bold></p>
+            <code>
+            function hello_world()
+            {
+                print("hello world!");
+            }
+            hello_world();
+            </code>
+        </content>
+    </post>
+        <post>
+        <title type="text">Second post</title>
+        <author type="text">Sten Gustavsson</author>
+        <date type="text">2023-02-20</date>
+        <images>
+        <image type="text">https://mijablur.com/wp-content/uploads/20211222_192106_0000.jpg</image>
+        </images>
+        <content type="html">
+            <p>This is my first second blog post on my blog. My name is Wilhelm Gustavsson and I´m 25 years old and a junior Fullstack Developer</p>
+            <p><bold>In the example below I will show you how to make a Hello World! script in Javascript</bold></p>
+            <code>
+            function hello_world()
+            {
+                print("hello world!");
+            }
+            hello_world();
+            </code>
+        </content>
+    </post>
+</posts>

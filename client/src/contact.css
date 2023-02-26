@@ -57,8 +57,10 @@ form textarea
 form button
 {
     border: none;
-    background-color: white;
-    color:rgba(15, 204, 15, 0.76);
+    background-color:rgba(15, 204, 15, 0.76);
+    padding: 1.2vw;
+    border-radius: 1em;
+    color: white;
     font-size:2em;
     font-family: 'Bebas Neue', cursive;
 }

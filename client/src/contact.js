@@ -43,8 +43,6 @@ const ContactForm = () => {
       method="GET"
       target="_blank" 
     >
-      <h1>Please feel free to send me an email</h1>
-
       <label for ="subject">Subject</label>
       <div className="mb-3 pt-0">
         <input

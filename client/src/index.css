@@ -64,13 +64,6 @@ body
   background-color:black;
 }
 
-header
-{
-    padding: 0.2vh;
-    background-image: linear-gradient(to right, rgb(73, 71, 71) , rgb(255, 255, 255));
-    color:white;
-}
-
 .main-menu
 {
   margin-left: 20vw;

@@ -4,6 +4,7 @@ import './blog.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Prism  from "prismjs";
+import Normalizer from 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
 import HTMLReactParser from 'html-react-parser'
 const loadLanguages = require('prismjs/components/');
 
@@ -24,8 +25,8 @@ class BlogPost extends React.Component
             articles.push(
             <article>
                 <h1>{post.title}</h1>
-                <h2>{post.author}</h2>
-                <h3>{post.date}</h3>
+                <h3>Written by: {post.author}</h3>
+                <h4>Published: {post.date}</h4>
                 <span>{HTMLReactParser(post.content)}</span>
             </article>
             )
@@ -51,7 +52,7 @@ function Blog()
         return (
         <>
             <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
-            <div class="code">{HTMLReactParser (html) }</div>
+            <header>This blog is under construction</header>
             <BlogPost blog_posts = {blog_posts}></BlogPost>
         </>
         )
@@ -110,8 +111,30 @@ class blog_post
             console.log(element)
             if(element.type == 'code')
             {
-                const code_html_string = element.props.children;
+                // Create a new Normalizer object
+                
+                // ..or use the default object from Prism
+                var nw = new Normalizer({
+                    'remove-trailing': false,
+                    'remove-indent': false,
+                    'left-trim': true,
+                    'right-trim': true,
+                    'break-lines': 1,
+                    'indent': 2,
+                    'remove-initial-line-feed': false,
+                    'tabs-to-spaces': 4,
+                    'spaces-to-tabs': 4
+                });
+
+                let code_html_string = element.props.children;
+                code_html_string = nw.normalize(code_html_string, {
+                    // Extra settings
+                    indent: 1
+                });
+                console.log(code_html_string)
+                //TODO: Parse language from XML not hardcoded
                 const codified_html_string = Prism.highlight(code_html_string, Prism.languages.javascript, 'js');
+                console.log(codified_html_string)
                 const pre = this.content.split("<code>")[0]
                 const post = this.content.split("</code>")[1]
                 if(pre != undefined && post != undefined)

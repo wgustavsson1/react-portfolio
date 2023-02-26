@@ -18,7 +18,7 @@ function Liftly()
         <p>Android App keeping track of fuel consumption with functionallity allowing app to automatically bill your friend for the ride. Developed in Java and includes a wide range of external integrations such as Facebook and Google Sign in, Maps integration,Messenger Integration, Fuel Station Integration etc..</p>
         <p><a href = "https://play.google.com/store/apps/details?id=com.wilhouse.apps.liftly">Download Liftly on Google Play</a></p>
         <img src={liftly_logo}></img>
-        <img src={liftly_google_play}></img>
+        <img src={liftly_google_play} class="fitted-img"></img>
         </article>
     )
 }

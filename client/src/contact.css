@@ -1,13 +1,3 @@
-h2 a
-{
-    position:fixed;
-    color:white;
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    right: 10vw;
-    top: 5vh;
-}
-
 form
 {
     text-align: center;

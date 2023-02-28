@@ -1,17 +1,24 @@
 
-code
-{
-    background-color: white;
-    margin-top:10vh;    
-}
-.code
-{
-    background-color: white;
-    margin-top:10vh;
-}
 article
 {
     position:relative;
     top:5vh;
     background-color: white;
+}
+.article-meta-data
+{
+    
+    font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    text-align: center; 
+}
+code
+{
+    display: block;
+    line-height: 200%;
+    padding:1vw;
+    width: 40vw;
+    text-align: center;
+    margin-left:30vw;
+    background-color: black;
+    color:white;
 }

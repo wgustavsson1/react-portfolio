@@ -82,6 +82,16 @@ iframe
   height:80vh;
 }
 
+.name-header
+{
+    z-index: 500;
+    position:fixed;
+    background-color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    right: 10vw;
+    top: 5vh;
+}
 .main-menu
 {
   margin-left: 20vw;
@@ -91,6 +101,7 @@ iframe
 {
   text-decoration: none;
 }
+
 
 h1
 {

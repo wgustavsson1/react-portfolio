@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Prism  from "prismjs";
 import Normalizer from 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
-import HTMLReactParser from 'html-react-parser'
+import HTMLReactParser from 'html-react-parser';
 const loadLanguages = require('prismjs/components/');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,9 +25,11 @@ class BlogPost extends React.Component
             articles.push(
             <article>
                 <h1>{post.title}</h1>
-                <h3>Written by: {post.author}</h3>
-                <h4>Published: {post.date}</h4>
-                <span>{HTMLReactParser(post.content)}</span>
+                <section class = "article-meta-data">
+                <h4>Written by: {post.author}</h4>
+                <h5>Published: {post.date}</h5>
+                </section>
+                <section>{HTMLReactParser(post.content)}</section>
             </article>
             )
         });
@@ -40,19 +42,12 @@ function Blog()
 {
     var blog_posts = parse_blog_posts();
     console.log(blog_posts)
-    //loadLanguages(['haml']);
-
-    // The code snippet you want to highlight, as a string
-    const code = "function hello_world(){console.log('hello world!'); hello_world!\n";
-
-    // Returns a highlighted HTML string
-    const html = Prism.highlight(code, Prism.languages.javascript, 'js');
-    console.log(html)
 
         return (
         <>
-            <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
-            <header>This blog is under construction</header>
+            <h2 className='name-header'><a href = "/">Wilhelm Gustavsson.</a></h2>
+            <header>This blog is under construction
+            </header>
             <BlogPost blog_posts = {blog_posts}></BlogPost>
         </>
         )
@@ -115,11 +110,11 @@ class blog_post
                 
                 // ..or use the default object from Prism
                 var nw = new Normalizer({
-                    'remove-trailing': false,
-                    'remove-indent': false,
+                    'remove-trailing': true,
+                    'remove-indent': true,
                     'left-trim': true,
                     'right-trim': true,
-                    'break-lines': 1,
+                    'break-lines': 5,
                     'indent': 2,
                     'remove-initial-line-feed': false,
                     'tabs-to-spaces': 4,
@@ -131,27 +126,28 @@ class blog_post
                     // Extra settings
                     indent: 1
                 });
-                console.log(code_html_string)
+
                 //TODO: Parse language from XML not hardcoded
                 const codified_html_string = Prism.highlight(code_html_string, Prism.languages.javascript, 'js');
-                console.log(codified_html_string)
+                console.log(codified_html_string + " codified")
+
                 const pre = this.content.split("<code>")[0]
                 const post = this.content.split("</code>")[1]
                 if(pre != undefined && post != undefined)
                 {
-                    this.content = pre + codified_html_string + post
+                    this.content = pre + "<code>" + codified_html_string + "</code>" + post
                 }
                 else if(pre!=undefined && post == undefined)
                 {
-                    this.content = pre + codified_html_string;
+                    this.content = pre + "<code>" + codified_html_string + "</code>";
                 }
                 else if(pre == undefined && post != undefined)
                 {
-                    this.content = codified_html_string + post
+                    this.content = "<code>" + codified_html_string + "</code>" + post
                 }
                 else
                 {
-                    this.content = codified_html_string;
+                    this.content = "<code>" + codified_html_string + "</code>";
                 }
             }
         })

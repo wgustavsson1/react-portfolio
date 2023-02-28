@@ -25,7 +25,7 @@ class BlogPost extends React.Component
             articles.push(
             <article>
                 <h1>{post.title}</h1>
-                <section class = "article-meta-data">
+                <section class = "article-head">
                 <h4>Written by: {post.author}</h4>
                 <h5>Published: {post.date}</h5>
                 </section>
@@ -45,9 +45,9 @@ function Blog()
 
         return (
         <>
-            <h2 className='name-header'><a href = "/">Wilhelm Gustavsson.</a></h2>
-            <header>This blog is under construction
-            </header>
+
+            <section className='header-warning'>This blog is under construction!</section>
+            <header><h2><a href = "/">Wilhelm Gustavsson.</a></h2></header>
             <BlogPost blog_posts = {blog_posts}></BlogPost>
         </>
         )

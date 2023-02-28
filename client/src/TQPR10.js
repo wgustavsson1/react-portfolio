@@ -10,7 +10,7 @@ function TQPR10()
 {
     return (
         <article>
-        <h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2>
+        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
         <h1>Examensarbete</h1>
         <p><bold>Automation Integration Using IFTTT Webhooks</bold></p>
         <p>Det här examensarbetet undersöker den idag största tjänsten för Automation Integration IFTTT och hur den hur den kan underlätta sammankoppling av olika webbtjänster. Detta undersöks genom att utveckla en webapplikation som är beroende av en extern tjänst. Applikationerna implementeras dels genom att använda IFTTT som en mellanhand men också genom att utveckla en jämförelseimplementation som inte använder sig av IFTTT. Implementationerna undersöks och jämförs med avseende på prestanda och kodkomplexitet.</p>

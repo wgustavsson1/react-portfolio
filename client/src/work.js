@@ -10,7 +10,7 @@ function WorkList()
 {
     return (
         <>
-        <header>Here are some examples of projects I have worked on! (list is still under construction)</header>
+        <section className='header-warning'>Here are some examples of projects I have worked on! (list is still under construction)</section>
         <ul>
             <li><div className='swapper-title'><a href = "/tddd23"><h1>TDDD23</h1><h2>Game made in C# using Unity Game Engine</h2></a></div></li>
             <li><div className='swapper-title'><a href = "/liftly"><h1>Liftly</h1><h2>Android app made in Java</h2></a></div></li>
@@ -25,7 +25,7 @@ function Work()
 {
     return (
     <div>
-        <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
+        <header><h2><a href = "/" id="font-white">Wilhelm Gustavsson.</a></h2></header>
         <WorkList></WorkList>
     </div>
     )

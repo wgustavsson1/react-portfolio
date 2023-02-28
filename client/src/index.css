@@ -82,15 +82,31 @@ iframe
   height:80vh;
 }
 
-.name-header
+header
 {
-    z-index: 500;
+    z-index: 5000000000000;
     position:fixed;
-    background-color: black;
+    color:black;
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    right: 10vw;
     top: 5vh;
+    transition: transform 0.5s;
+    transform: translateX(0);
+    right:10vw;
+}
+header:hover
+{
+  transform: translateX(-3%);
+}
+header h2 a
+{
+  text-decoration: none;
+  color:black;
+}
+header h2 a:hover
+{
+  text-decoration: none;
+  color:rgba(15, 204, 15, 0.76);  
 }
 .main-menu
 {
@@ -102,7 +118,17 @@ iframe
   text-decoration: none;
 }
 
-
+.header-warning
+{
+  background-color: orange;
+  text-align: center;
+  color:white;
+  padding:1vw;
+  position: fixed;
+  z-index: 3000;
+  top:0;
+  width: 100vw;
+}
 h1
 {
   /*text-shadow: 5px 5px yellow; */

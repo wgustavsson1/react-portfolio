@@ -10,7 +10,7 @@ function Contact() {
   
     return(
       <div>
-        <h2><a href = "/">Wilhelm Gustavsson.</a></h2>
+       <header><h2><a href = "/" id="font-white">Wilhelm Gustavsson.</a></h2></header>
       <ContactForm></ContactForm>
       </div>
       )

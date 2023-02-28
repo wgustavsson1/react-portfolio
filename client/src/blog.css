@@ -2,21 +2,21 @@
 article
 {
     position:relative;
-    top:5vh;
     background-color: white;
 }
-.article-meta-data
+.article-head
 {
-    
     font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
     text-align: center; 
 }
 code
 {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     display: block;
     line-height: 200%;
-    padding:1vw;
-    width: 40vw;
+    padding:2vw;
+    width: 36vw;
     text-align: center;
     margin-left:30vw;
     background-color: black;

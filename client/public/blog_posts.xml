@@ -4,12 +4,10 @@
         <title type="text">Blog is under construction!</title>
         <author type="text">Wilhelm Gustavsson</author>
         <date type="text">2023-02-19</date>
-        <images>
-        <image type="text">https://mijablur.com/wp-content/uploads/20211222_192106_0000.jpg</image>
-        </images>
         <content type="html">
             <p>Welcome to my blog! Currently the blog is under construction. </p>
-            <p>Here is an example of how to use the map function in Python</p>
+            <img src="https://www.lawrenceprospera.org/images/quintana/Page_Under_Construction.jpg" alt="Under construction sign"/>
+            <p>While you wait: here is an example of how to use the map function in Python</p>
             <code>
                 def square(num):
                     return num**2
@@ -26,9 +24,6 @@
         <title type="text">Python Filter,Map and reduce</title>
         <author type="text">Wilhelm Gustavsson</author>
         <date type="text">2022-02-22</date>
-        <images>
-        <image type="text">https://mijablur.com/wp-content/uploads/20211222_192106_0000.jpg</image>
-        </images>
         <content type="html">
             <p>Python is a powerful programming language that provides a number of built-in functions to help developers write efficient and concise code. Three of the most commonly used built-in functions in Python are filter(), map(), and reduce(). These functions are used for various purposes, including data processing, data filtering, and data transformation. In this post, we'll take a closer look at these three functions and how they can be used in Python.</p>
             <p>The map() Function The map() function is used to transform each element of a sequence based on a given function. The syntax for using the map() function is as follows:</p>

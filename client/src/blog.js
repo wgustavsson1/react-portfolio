@@ -62,25 +62,17 @@ function getXMLDocument(filepath) {
 function parse_blog_posts()
 {
     var blog_posts = [];
-    var image_sources = [];
     var xml = new DOMParser().parseFromString(getXMLDocument("blog_posts.xml"),"text/xml");
     var posts = xml.getElementsByTagName("post")
 
     for(var index = 0; index < posts.length; index++)
     {
-        console.log(i)
         const title = posts[index].getElementsByTagName("title")[0].innerHTML
         const date = posts[index].getElementsByTagName("date")[0].innerHTML
         const author = posts[index].getElementsByTagName("author")[0].innerHTML
         const content = posts[index].getElementsByTagName("content")[0].innerHTML
-        const images = posts[index].getElementsByTagName("image")
 
-        for(var i = 0; i < images.length; i++)
-        {
-            image_sources.push(images[i].innerHTML)
-        }
-        
-        var new_post = new blog_post(title,author,date,image_sources,content)
+        var new_post = new blog_post(title,author,date,content)
         blog_posts.push(new_post)
     }
     console.log(blog_posts)
@@ -89,12 +81,11 @@ function parse_blog_posts()
 
 class blog_post
 {
-    constructor(title,author,date,image_sources,content)
+    constructor(title,author,date,content)
     {
         this.title = title;
         this.author = author;
         this.date = date;
-        this.image_sources = image_sources;
         this.content = content;
         this.codify();
     }

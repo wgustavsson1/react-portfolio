@@ -27,6 +27,11 @@ function Work()
     <div>
         <header><h2><a href = "/" id="font-white">Wilhelm Gustavsson.</a></h2></header>
         <WorkList></WorkList>
+        <section id = "badges">
+
+            <a href="https://github.com/wgustavsson1"><img src ="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="badge"/></a>
+            <a href="https://www.linkedin.com/in/wilhelm-gustavsson/"><img src ="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="badge"/></a>
+        </section>
     </div>
     )
 }

@@ -11,6 +11,10 @@
     {
       display:block;
     }
+    #badges
+    {
+      width: 35vw;
+    }
     body
     {
       font-size:0.8em;
@@ -30,6 +34,10 @@
     {
       display:block;
     }
+    #badges
+    {
+      width: 25vw;
+    }
     body
     {
       font-size:1em;
@@ -48,6 +56,10 @@
     #main-menu-mobile
     {
       display:none;
+    }
+    #badges
+    {
+      width: 20vw;
     }
     body
     {
@@ -70,12 +82,12 @@ body
 }
 #badges
 {
-  margin-left: 35vw;
-  width: 30vw;
+  position:fixed;
+  bottom:0;
+  left:0;
 }
 .badge
 {
-  margin-top:2vh;
   width: 40%;
   margin-left: 5%;
 }

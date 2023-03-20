@@ -38,4 +38,42 @@
                 </code>
         </content>
     </post>
+    <post>
+        <title type="text">Javascript async keywords</title>
+        <author type="text">Wilhelm Gustavsson</author>
+        <date type="text">2022-03-20</date>
+        <content type="html">
+            <p> One of the important features of JavaScript is the ability to work with asynchronous code. Asynchronous programming is essential when dealing with long-running tasks or operations that rely on external resources. It allows you to write non-blocking code that can perform multiple tasks simultaneously, thus improving the performance and responsiveness of your application.</p>
+            <p>In JavaScript, the async keyword is used to define asynchronous functions. When you define a function as async, it returns a promise that can be resolved or rejected with the result of the function. The async keyword was introduced in ECMAScript 2017, and it has since become an important part of modern JavaScript development. To use the async keyword, you define a function with the async keyword before the function name. For example:</p>
+            <code>
+                async function fetchData() {
+                const response = await fetch('https://example.com/data');
+                const data = await response.json();
+                return data;}
+            </code>
+            <p>In this example, the fetchData function is defined as async. The function performs an HTTP request using the fetch function, which returns a promise that resolves to a response object. The response object is then parsed using the json method, which also returns a promise. Finally, the data variable is returned as the result of the fetchData function.</p>
+            <p>The await keyword is used to wait for a promise to be resolved or rejected. When used inside an async function, the await keyword causes the function to pause execution until the promise is resolved or rejected. This makes it possible to write asynchronous code that looks like synchronous code, which can make it easier to reason about.</p>
+            <code>
+                async function example() {
+                const result1 = await promise1();
+                const result2 = await promise2();
+                return result1 + result2;
+                }
+            </code>
+            <p>In this example, the example function defines two variables, result1 and result2, which are set to the result of two asynchronous functions, promise1 and promise2. The function then returns the sum of these two results. The await keyword is used to wait for the promises to resolve before assigning their values to the variables.</p>
+            <p>When using the async keyword, it is important to handle errors properly. Any errors that occur inside an async function will be caught by the promise that is returned by the function. You can use the try and catch keywords to handle these errors.</p>
+            <code>
+            async function example() {
+                try {
+                    const result = await promise();
+                    return result;
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+            </code>
+            <p>In this example, the example function attempts to get the result of the promise function using the await keyword. If the promise is resolved successfully, the result is returned. If an error occurs, it is caught by the catch block, which logs the error to the console.</p>
+            <p>In conclusion, the async keyword is an important feature of modern JavaScript development. It allows you to write asynchronous code that is easy to reason about and can improve the performance and responsiveness of your application. When using the async keyword, it is important to handle errors properly and use the await keyword to wait for promises to resolve. By mastering asynchronous programming with JavaScript, you can create more efficient and effective web applications.</p>
+        </content>
+    </post>
 </posts>

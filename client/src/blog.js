@@ -113,6 +113,7 @@ class blog_post
                 });
 
                 let code_html_string = element.props.children;
+                const original_code_string = element.props.children;
                 code_html_string = nw.normalize(code_html_string, {
                     // Extra settings
                     indent: 1
@@ -121,25 +122,8 @@ class blog_post
                 //TODO: Parse language from XML not hardcoded
                 const codified_html_string = Prism.highlight(code_html_string, Prism.languages.javascript, 'js');
                 console.log(codified_html_string + " codified")
-
-                const pre = this.content.split("<code>")[0]
-                const post = this.content.split("</code>")[1]
-                if(pre != undefined && post != undefined)
-                {
-                    this.content = pre + "<code>" + codified_html_string + "</code>" + post
-                }
-                else if(pre!=undefined && post == undefined)
-                {
-                    this.content = pre + "<code>" + codified_html_string + "</code>";
-                }
-                else if(pre == undefined && post != undefined)
-                {
-                    this.content = "<code>" + codified_html_string + "</code>" + post
-                }
-                else
-                {
-                    this.content = "<code>" + codified_html_string + "</code>";
-                }
+                //Find current code block in this.content and replace it with the codified html string
+                this.content = this.content.replace(original_code_string,codified_html_string);
             }
         })
     }

@@ -27,6 +27,10 @@ function Work()
     <div>
         <header><h2><a href = "/" id="font-white">Wilhelm Gustavsson.</a></h2></header>
         <WorkList></WorkList>
+        <section id = "badges">
+            <a href="https://github.com/wgustavsson1"><img src={require('./images/github.png')} class="badge"/></a>
+            <a href="https://www.linkedin.com/in/wilhelm-gustavsson/"><img src={require('./images/linkedin.png')} class="badge"/></a>
+        </section>
     </div>
     )
 }

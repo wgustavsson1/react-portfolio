@@ -8,6 +8,8 @@ import Home from './index'
 import Liftly from './liftly'
 import TDDD23 from './TDDD23'
 import TQPR10 from './TQPR10'
+import TDP013 from './TDP013'
+import TDP024 from './TDP024'
 import dynamic_webbapps from './dynamic_webbapps'
 import Dynamic_webbapps from './dynamic_webbapps'
 
@@ -49,6 +51,8 @@ function App() {
       <Route path = "/tddd23" element = {<TDDD23/>} > </Route>
       <Route path = "/tqpr10" element = {<TQPR10/>}></Route>
       <Route path = "/dynamic_webbapps" element = {<Dynamic_webbapps/>}></Route>
+      <Route path = "/TDP013" element = {<TDP013/>}></Route>
+      <Route path = "/TDP024" element = {<TDP024/>}></Route>
     </Routes>
     </Router>
   )

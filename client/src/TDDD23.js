@@ -12,8 +12,9 @@ function TDDD23()
         <article>
         <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
         <h1>Design And Programming Of Computer Games</h1>
-        <p>TDDD23 - Design And Programming Of Computer Games is a course on Linköpings University. In this course I developed a mobile game in Unity Game Engine using C#. The game mission is to catch dollar bills falling from the crashing airplane using your pickup truck while avoiding getting hit by debris.</p>
-        <p>Unfourtunately the source code of this game is lost since my university gitlab account was closed without any notice</p>
+        <bold>TDDD23 - Design And Programming Of Computer Games</bold> 
+        <p>This is a course i  read on Linköpings University. In this course I developed a mobile game in Unity Game Engine using C#. The game mission is to catch dollar bills falling from the crashing airplane using your pickup truck while avoiding getting hit by debris.</p>
+        <p>Unfourtunately the source code from this game is lost since my university Gitlab account was closed without any notice</p>
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/lI2jDhHtuVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     )

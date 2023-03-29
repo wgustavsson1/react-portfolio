@@ -3,8 +3,14 @@ ul
 {
     text-align: center;
     color: rgba(15, 204, 15, 0.76);
+    margin:0;
+    padding:0;
     margin-top:20vh;
     font-family: 'Bebas Neue', cursive;
+}
+#work-list
+{
+   padding-bottom: 5vh;
 }
 #font-white
 {

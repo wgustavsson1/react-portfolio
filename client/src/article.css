@@ -1,4 +1,5 @@
-@media (max-width:600px) {
+
+@media (max-width:600px) { 
   article h1
   {
     font-size: 3em;
@@ -18,12 +19,36 @@
     font-size:7em;
   }
 }
-
-article
+article h1
 {
+  color:rgba(15, 204, 15, 1);
+}
+article p
+{
+  color:black !important;
+  /*Change the font below to a font that fits programming blogs*/
+  font-family: none !important;
+  border-radius: 1em;
+  padding:1vw;
+  /*Add box shadow to the code block*/
+  box-shadow: 0 0 0.32em rgba(0, 0, 0, 0.5);
+}
+code
+{
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5) !important;
+}
+article h2,h3,h4,h5,h6
+{
+  color:black;
+}
+article
+{   
+    /*Add box shadow*/
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    background-color:white;
     padding-top: 15vh;
     padding-bottom: 15vh;
 }

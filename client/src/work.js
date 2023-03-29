@@ -6,12 +6,14 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+
+
 function WorkList()
 {
     return (
         <>
         <section className='header-warning'>Here are some projects I have worked on. Unfourtunately many university projects are gone since my uni Gitlab was closed :( List is under construction!</section>
-        <ul>
+        <ul id="work-list">
             <li><div className='swapper-title'><a href = "/liftly"><h1>Liftly</h1><h2>Android app made in Java</h2></a></div></li>
             <li><div className='swapper-title'><a href = "/dynamic_webbapps"><h1>UU-76007</h1><h2>Dynamic Webapps</h2></a></div></li>
             <li><div className='swapper-title'><a href = "/TQPR10"><h1>TQPR10</h1><h2>Bachelor's Thesis</h2></a></div></li>

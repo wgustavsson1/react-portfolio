@@ -6,6 +6,8 @@ import Contact from './contact'
 import Work from './work'
 import Home from './index'
 import Liftly from './liftly'
+import Amcap from './amcap'
+import Euronetics from './euronetics'
 import TDDD23 from './TDDD23'
 import TQPR10 from './TQPR10'
 import TDP013 from './TDP013'
@@ -48,6 +50,8 @@ function App() {
       <Route path = "/contact" element = {<Contact/>} > </Route>
       <Route path = "/work" element = {<Work/>} > </Route>
       <Route path = "/liftly" element = {<Liftly/>} > </Route>
+      <Route path = "/amcap" element = {<Amcap/>} > </Route>
+      <Route path = "/euronetics" element = {<Euronetics/>} > </Route>
       <Route path = "/tddd23" element = {<TDDD23/>} > </Route>
       <Route path = "/tqpr10" element = {<TQPR10/>}></Route>
       <Route path = "/dynamic_webbapps" element = {<Dynamic_webbapps/>}></Route>

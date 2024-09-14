@@ -10,33 +10,75 @@ const loadLanguages = require('prismjs/components/');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-class BlogPost extends React.Component
-{
-    constructor(params)
-    {
-        console.log(params)
-        super(params)
-        this.params = params
+class BlogPost extends React.Component {
+    constructor(params) {
+        super(params);
+        this.state = {
+            typingContent: this.initializeTypingContent(params.blog_posts),
+        };
+        this.params = params;
+        this.typingIntervals = [];
     }
-    render()
-    {
-        var articles = []
-        this.params.blog_posts.forEach((post,index) => {
-            articles.push(
-            <article>
-                <h1>{post.title}</h1>
-                <section class = "article-head">
-                <h4>Written by: {post.author}</h4>
-                <h5>Published: {post.date}</h5>
-                </section>
-                <section>{HTMLReactParser(post.content)}</section>
-            </article>
-            )
+
+    initializeTypingContent(posts) {
+        // Initialize the typing content for each post to be an empty string
+        return posts.map(() => '');
+    }
+
+    componentDidMount() {
+        // Start the typing animation for each post
+        this.params.blog_posts.forEach((post, index) => {
+            this.startTypingEffect(post.content, index);
         });
-        return articles
+    }
+
+    startTypingEffect(content, postIndex) {
+        let contentArray = content.split(''); // Split content into characters
+        let currentContent = '';
+
+        let interval = setInterval(() => {
+            if (contentArray.length > 0) {
+                currentContent += contentArray.shift(); // Append one character at a time
+
+                // Update the typingContent state for the specific post
+                this.setState((prevState) => {
+                    const newTypingContent = [...prevState.typingContent];
+                    newTypingContent[postIndex] = currentContent;
+                    return { typingContent: newTypingContent };
+                });
+            } else {
+                clearInterval(interval); // Stop the interval once all characters are typed
+            }
+        },5); // Adjust the speed of the typing effect (50ms delay)
+
+        this.typingIntervals.push(interval); // Keep track of intervals to clear them if needed
+    }
+
+    componentWillUnmount() {
+        // Clear all intervals when the component is unmounted
+        this.typingIntervals.forEach(clearInterval);
+    }
+
+    render() {
+        var articles = [];
+        this.params.blog_posts.forEach((post, index) => {
+            articles.push(
+                <article key={index}>
+                    <h1>{post.title}</h1>
+                    <section className="article-head">
+                        <h4>By: {post.author}</h4>
+                        <h5>Published: {post.date}</h5>
+                    </section>
+                    <section id="blog-content">
+                        {/* Use HTMLReactParser to parse the typing content */}
+                        {HTMLReactParser(this.state.typingContent[index])}
+                    </section>
+                </article>
+            );
+        });
+        return <div>{articles}</div>;
     }
 }
-
 
 function Blog()
 {
@@ -46,7 +88,7 @@ function Blog()
         return (
         <>
 
-            <section className='header-warning'>This blog is under construction!</section>
+            <section className='header-warning'>We'll be back soon</section>
             <header><h2><a href = "/">Wilhelm Gustavsson.</a></h2></header>
             <BlogPost blog_posts = {blog_posts}></BlogPost>
         </>

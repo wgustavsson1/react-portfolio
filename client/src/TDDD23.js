@@ -10,7 +10,7 @@ function TDDD23()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Design And Programming Of Computer Games</h1>
         <bold>TDDD23 - Design And Programming Of Computer Games</bold> 
         <p>This is a course i  read on Linköpings University. In this course I developed a mobile game in Unity Game Engine using C#. The game mission is to catch dollar bills falling from the crashing airplane using your pickup truck while avoiding getting hit by debris.</p>

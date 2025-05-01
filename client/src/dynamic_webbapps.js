@@ -10,7 +10,7 @@ function Dynamic_webbapps()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Dynamic Webapps</h1>
         <em>UU-76007 - Dynamic Webapps</em>
         <p>I took this course on Uppsala University. In this course you would make a website that in some way was about food<br></br><br></br>

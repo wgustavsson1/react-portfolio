@@ -10,7 +10,7 @@ function TDP024()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Enterprise Systems</h1>
         <bold>TDP024- Enterprise Systems (Git,Maven & SOA)</bold>
         <br></br><br></br>

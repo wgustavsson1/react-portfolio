@@ -22,7 +22,7 @@ function Liftly()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Liftly</h1>
         <section class="article-head"></section>
         <p>Android App keeping track of fuel consumption with functionallity allowing app to automatically bill your friend for the ride. Developed in Java and includes a wide range of external integrations such as Facebook and Google Sign in, Maps integration,Messenger Integration, Fuel Station Integration etc..

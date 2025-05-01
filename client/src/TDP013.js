@@ -10,7 +10,7 @@ function TDP013()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Webbprogramming And Interactivity</h1>
         <bold>TDP013 - Webbprogramming and interactivity</bold>
         <p>In this course a website would be developed. One of the very few restrictions was that the website had to be a social media website.<br></br><br></br>

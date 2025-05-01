@@ -10,7 +10,7 @@ function Contact() {
   
     return(
       <div>
-       <header><h2><a href = "/" id="font-white">Wilhelm Gustavsson.</a></h2></header>
+       <header><h2><a href = "/" id="font-white">William Gustafsson.</a></h2></header>
       <ContactForm></ContactForm>
       <section id = "badges">
         <a href="https://github.com/wgustavsson1"><img src={require('./images/github.png')} class="badge"/></a>

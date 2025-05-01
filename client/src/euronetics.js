@@ -12,7 +12,7 @@ function Liftly()
 {
     return (
         <article>
-        <header><h2 id = "name"><a href = "/">Wilhelm Gustavsson.</a></h2></header>
+        <header><h2 id = "name"><a href = "/">William Gustafsson.</a></h2></header>
         <h1>Euronetics</h1>
         <section class="article-head"></section>
         

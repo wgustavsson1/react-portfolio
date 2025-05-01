@@ -89,12 +89,12 @@ function MainMenu()
         <div id='main-menu-desktop' class='main-menu'>
         <a href = "/Blog"><div className='swapper-title font-white'><SwapperTitle text_selected="Blog" text_normal = "Hello."/></div></a>
         <a href = "/Work"><div className='swapper-title font-green'><SwapperTitle text_selected="Work" text_normal = "I am"/></div></a>
-        <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Contact" text_normal = "Wilhelm Gustavsson"/></div></a>
+        <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Contact" text_normal = "William Gustafsson"/></div></a>
         </div>
         <div id='main-menu-mobile' class='main-menu'>
         <div className='font-white'><SwapperTitleMobile text_selected="Blog" text_normal = "Hello." url="/Blog"/></div>
         <div className='font-green'><SwapperTitleMobile  text_selected="Work" text_normal = "I am" url="/Work" /></div>
-        <div className='font-green'><SwapperTitleMobile text_selected="Contact" text_normal = "Wilhelm Gustavsson" url="/Contact"/></div>
+        <div className='font-green'><SwapperTitleMobile text_selected="Contact" text_normal = "William Gustafsson" url="/Contact"/></div>
         </div>
         <section id = "badges">
 
@@ -119,4 +119,4 @@ export default Home
 //const swapper_c = ReactDOM.createRoot(document.getElementById('SwapperTitle_c'));
 //swapper_a.render(<SwapperTitle text_selected="Home" text_normal = "Hello."/>)
 //swapper_b.render(<SwapperTitle text_selected="Work" text_normal = "I am"/>)
-//swapper_c.render(<SwapperTitle text_selected="Contact" text_normal = "Wilhelm Gustavsson"/>)
+//swapper_c.render(<SwapperTitle text_selected="Contact" text_normal = "William Gustafsson"/>)

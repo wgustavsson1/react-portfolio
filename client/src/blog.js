@@ -89,7 +89,7 @@ function Blog()
         <>
 
             <section className='header-warning'>We'll be back soon</section>
-            <header><h2><a href = "/">William Gustafsson.</a></h2></header>
+            <header><h2><a href = "/">William Gustafsson</a></h2></header>
             <BlogPost blog_posts = {blog_posts}></BlogPost>
         </>
         )

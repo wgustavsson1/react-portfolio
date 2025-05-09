@@ -38,7 +38,7 @@ function Work()
 {
     return (
     <div>
-        <header><h2><a href = "/" id="font-white">William Gustafsson.</a></h2></header>
+        <header><h2><a href = "/" id="font-white">William Gustafsson</a></h2></header>
         <WorkList></WorkList>
         <section id = "badges">
             <a href="https://github.com/wgustavsson1"><img src={require('./images/github.png')} class="badge"/></a>

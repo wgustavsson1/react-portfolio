@@ -1,4 +1,0 @@
-Skapa blogg https://prismjs.com/index.html?theme=prism-dark
-Lägg till artiklar
-Lägg till Linkedin badge: https://www.linkedin.com/badges/profile/create?vanityname=wilhelm-gustavsson-650510266&preferredlocale=en_US&trk=public_profile-settings_badge
-Lägg till alla hemsidor jag har på Netlify.com som artiklar

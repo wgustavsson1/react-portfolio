@@ -18,7 +18,7 @@ ul
 }
 #font-white:hover
 {
-    color:rgba(15, 204, 15, 0.76);
+    color: #102E4A;
 }
 ul li
 {
@@ -28,7 +28,7 @@ ul li
 ul li a
 {
     text-decoration: none;
-    color: rgba(15, 204, 15, 0.76);
+    color: #102E4A;
 }
 ul li h1
 {

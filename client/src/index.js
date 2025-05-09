@@ -78,26 +78,25 @@ class SwapperTitleMobile extends React.Component
         return <h1 onClick={this.handleClick}>{this.state.selected?this.params.text_selected: this.params.text_normal}</h1>
     }
 
-}
+}    
 
 
 function MainMenu()
 {
     //Return two menues (one for desktop and one for mobile)
     return(
-        <div>
+        <div id="main-menu">
         <div id='main-menu-desktop' class='main-menu'>
-        <a href = "/Blog"><div className='swapper-title font-white'><SwapperTitle text_selected="Blog" text_normal = "Tja!"/></div></a>
-        <a href = "/Work"><div className='swapper-title font-green'><SwapperTitle text_selected="Work" text_normal = "Jag är"/></div></a>
-        <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Contact" text_normal = "William Gustafsson"/></div></a>
+        <a href = "/Blog"><div className='swapper-title font-white'><SwapperTitle text_selected="Blogg" text_normal = "Hej &"/>  </div></a>
+        <a href = "/Work"><div className='swapper-title font-green'><SwapperTitle text_selected="Jobb" text_normal = "Välkommen :)"/></div></a>
+        <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Kontakta mig" text_normal = "Jag är William Gustafsson"/></div></a>
         </div>
         <div id='main-menu-mobile' class='main-menu'>
-        <div className='font-white'><SwapperTitleMobile text_selected="Blog" text_normal = "Tja!" url="/Blog"/></div>
-        <div className='font-green'><SwapperTitleMobile  text_selected="Work" text_normal = "Jag är" url="/Work" /></div>
-        <div className='font-green'><SwapperTitleMobile text_selected="Contact" text_normal = "William Gustafsson" url="/Contact"/></div>
+        <div className='font-white'><SwapperTitleMobile text_selected="Blogg" text_normal = "Tja!" url="/Blog"/></div>
+        <div className='font-green'><SwapperTitleMobile  text_selected="Jobb" text_normal = "Jag är" url="/Work" /></div>
+        <div className='font-green'><SwapperTitleMobile text_selected="Kontakt" text_normal = "William Gustafsson" url="/Contact"/></div>
         </div>
         <section id = "badges">
-
             <a href="https://github.com/wgustavsson1"><img src={require('./images/github.png')} class="badge"/></a>
             <a href="https://www.linkedin.com/in/wilhelm-gustavsson/"><img src={require('./images/linkedin.png')} class="badge"/></a>
         </section>

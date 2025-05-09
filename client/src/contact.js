@@ -47,22 +47,21 @@ const ContactForm = () => {
       method="GET"
       target="_blank" 
     >
-      <label for ="subject">Subject</label>
+      <label for ="subject">Ämne </label>
       <div className="mb-3 pt-0">
         <input
           type="text"
           name="subject"
-          placeholder = "Regarding.."
+          placeholder = "Hallå där.."
           className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />
       </div>
-      <label for ="body">Message</label>
+      <label for ="body">Meddelande</label>
       <div className="mb-3 pt-0">
         <textarea
           name="body"
-          placeholder = "Hello..
-          Best Regards"
+          placeholder = "Tjenare.."
           className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />

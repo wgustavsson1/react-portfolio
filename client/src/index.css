@@ -73,7 +73,7 @@ body
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /*background-image: url('images/background.jpg');*/
-    background-color:rgba(0, 0, 0, 1);
+    background-color:#A682FF;
     width: 100vw;
     height:100vh;
     padding:0;
@@ -98,6 +98,58 @@ ul
 .fitted-img
 {
   width: 60vw;
+}
+img
+{
+  transform:
+    rotateX(51deg)
+    rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+    &:hover {
+      transform:
+        translate3d(0px, -16px, 0px)
+        rotateX(51deg)
+        rotateZ(43deg);
+      box-shadow:
+        1px 1px 0 1px #f9f9fb,
+        -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+    }
+}
+
+.regular-img
+{
+  margin-top:10px;
+  transform:
+    rotateX(-0deg)
+    rotateZ(-0deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+    &:hover {
+      transform:
+        translate3d(0px, -16px, 0px)
+        rotateX(0deg)
+        rotateZ(0deg);
+      box-shadow:
+        1px 1px 0 1px #f9f9fb,
+        -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+    }
 }
 iframe
 {
@@ -129,12 +181,13 @@ header h2 a
 header h2 a:hover
 {
   text-decoration: none;
-  color:rgba(15, 204, 15, 0.76);  
+  color:#102E4A;  
 }
 .main-menu
 {
   margin-left: 20vw;
   margin-top:15vh;
+  border-radius: 2em;
 }
 .main-menu a
 {
@@ -148,7 +201,7 @@ header h2 a:hover
   color:white;
   padding:1vw;
   position: fixed;
-  z-index: 3000;
+  z-index:-200;
   top:0;
   width: 100vw;
 }
@@ -165,7 +218,7 @@ h1
 }
 .font-green
 {
-  color:rgba(204, 179, 15, 0.76);
+  color:#102E4A;
 }
 .swapper-title
 {

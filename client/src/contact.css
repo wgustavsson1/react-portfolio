@@ -27,7 +27,7 @@ form input
 }
 form label
 {
-    color:rgba(15, 204, 15, 0.76);
+    color:#102E4A;
     font-size:3em;
     font-family: 'Bebas Neue', cursive;
 }
@@ -47,7 +47,7 @@ form textarea
 form button
 {
     border: none;
-    background-color:rgba(15, 204, 15, 0.76);
+    background-color: #102E4A;
     padding: 1.2vw;
     border-radius: 1em;
     color: white;

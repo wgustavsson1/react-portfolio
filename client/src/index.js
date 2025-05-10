@@ -92,9 +92,9 @@ function MainMenu()
         <a href = "/Contact"><div className='swapper-title font-green'><SwapperTitle text_selected="Kontakta mig" text_normal = "Jag är William Gustafsson"/></div></a>
         </div>
         <div id='main-menu-mobile' class='main-menu'>
-        <div className='font-white'><SwapperTitleMobile text_selected="Blogg" text_normal = "Tja!" url="/Blog"/></div>
-        <div className='font-green'><SwapperTitleMobile  text_selected="Jobb" text_normal = "Jag är" url="/Work" /></div>
-        <div className='font-green'><SwapperTitleMobile text_selected="Kontakt" text_normal = "William Gustafsson" url="/Contact"/></div>
+        <div className='font-white'><SwapperTitleMobile text_selected="Blogg" text_normal = "Hej &" url="/Blog"/></div>
+        <div className='font-green'><SwapperTitleMobile  text_selected="Jobb" text_normal = "Välkommen :)" url="/Work" /></div>
+        <div className='font-green'><SwapperTitleMobile text_selected="Kontakt" text_normal = "Jag är William Gustafsson" url="/Contact"/></div>
         </div>
         <section id = "badges">
             <a href="https://github.com/wgustavsson1"><img src={require('./images/github.png')} class="badge"/></a>
